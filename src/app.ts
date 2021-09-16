@@ -1,11 +1,11 @@
-import express from 'express';
+import express from "express";
 import routes from "./routes/index";
 const app = express();
 const port = 3000;
 
-app.use('/api', routes)
+app.use("/api", routes);
 
-app.listen(port, () => console.log(`Listening on port ${port}`))
+app.listen(port, () => console.log(`Listening on port ${port}`));
 
 // ENDPOINT params filname, width, height
 // search image in filesystem
@@ -13,4 +13,4 @@ app.listen(port, () => console.log(`Listening on port ${port}`))
 // if not resize and create thumbnail
 // is yes - response image
 
-export default app
+export default app;

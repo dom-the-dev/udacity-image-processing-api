@@ -1,5 +1,5 @@
 const getThumbnail = async (filename: string) => {
 
-}
+};
 
-export default getThumbnail
+export default getThumbnail;

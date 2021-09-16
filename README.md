@@ -16,3 +16,7 @@ Author: Dominik Amrugiewicz
 
 #### Build with TypeScript and run all Tests
 `npm run test`
+
+#### Run eslint
+`npm run lint`
+`npm run lint -- --fix` to apply fixes
