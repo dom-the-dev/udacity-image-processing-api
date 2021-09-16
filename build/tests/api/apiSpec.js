@@ -47,7 +47,7 @@ describe('Test api', function () {
         var response;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, request.get('/')];
+                case 0: return [4 /*yield*/, request.get('/api')];
                 case 1:
                     response = _a.sent();
                     expect(response.statusCode).toBe(200);
@@ -60,7 +60,7 @@ describe('Test api', function () {
         var response;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, request.get('/')];
+                case 0: return [4 /*yield*/, request.get('/api')];
                 case 1:
                     response = _a.sent();
                     console.log('RESPONSE', response);
