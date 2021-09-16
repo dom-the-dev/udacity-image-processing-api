@@ -35,52 +35,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var supertest_1 = __importDefault(require("supertest"));
-var app_1 = __importDefault(require("../../app"));
-var request = (0, supertest_1.default)(app_1.default);
-describe('GET /api/images', function () {
-    it('should response image not missing filename', function (done) { return __awaiter(void 0, void 0, void 0, function () {
-        var response;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, request.get('/api/image')];
-                case 1:
-                    response = _a.sent();
-                    expect(response.statusCode).toBe(400);
-                    expect(response.text).toBe('Filename missing');
-                    done();
-                    return [2 /*return*/];
-            }
-        });
-    }); });
-    it('it should response original image', function (done) { return __awaiter(void 0, void 0, void 0, function () {
-        var response;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, request.get('/api/image?filename=argentina')];
-                case 1:
-                    response = _a.sent();
-                    expect(response.statusCode).toBe(200);
-                    done();
-                    return [2 /*return*/];
-            }
-        });
-    }); });
-    it('it should response an thumbnail', function (done) { return __awaiter(void 0, void 0, void 0, function () {
-        var response;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, request.get('/api/image?filename=argentina&width=200&height=200')];
-                case 1:
-                    response = _a.sent();
-                    expect(response.statusCode).toBe(200);
-                    done();
-                    return [2 /*return*/];
-            }
-        });
-    }); });
-});
+var getThumbnail = function (filename) { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        return [2 /*return*/];
+    });
+}); };
+exports.default = getThumbnail;

@@ -6,7 +6,24 @@ router.get('/', (req, res) => {
 })
 
 router.get('/image', ((req, res) => {
-    res.send('your image')
+
+    let filename = req.query.filename
+
+    if(!filename) {
+        res.status(400).send('Filename missing')
+    } else {
+        let width = req.query.width
+        let height = req.query.height
+
+        res.sendFile('src/assets/full/fjord.jpg');
+
+        // thumbnail?
+                // if not get fullimage and resize
+                // response thumbnail
+
+        res.send('Image')
+    }
+
 }))
 
 export default router;
