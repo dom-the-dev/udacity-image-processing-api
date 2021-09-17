@@ -18,6 +18,14 @@ Available filenames
 - palmtunnel
 - santamonica
 
+## Getting started
+
+- Clone this repository `git clone https://github.com/dom-the-dev/udacity-image-processing-api.git`
+- Cd into project directorry `cd  udacity-image-processing-api`
+- Install dependencies `npm install`
+- Build application `npm run build`
+- Start server `node build/app.js`
+- Visit `http://localhost:3000/`
 
 ## Available Script:
 
