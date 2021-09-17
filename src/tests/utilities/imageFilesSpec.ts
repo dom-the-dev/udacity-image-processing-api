@@ -3,7 +3,7 @@ import {
   getThumbnailPath,
   resizeImage,
 } from "../../utilities/imageFiles";
-import {existsSync} from "fs";
+import { existsSync } from "fs";
 
 describe("Get thumbnails", () => {
   it("should return filepath for palmtunnel thumbnail", async () => {
@@ -31,11 +31,15 @@ describe("Get fullsize image", () => {
 
 describe("Resize Image", () => {
   it("should create filepath for resized image", async () => {
-    expect(existsSync("./src/assets/thumbnail/palmtunnel_600_600.jpg")).toBeFalsy();
+    expect(
+      existsSync("./src/assets/thumbnail/palmtunnel_600_600.jpg")
+    ).toBeFalsy();
 
     const resized = await resizeImage("palmtunnel", 600, 600);
 
     expect(resized).toBe("/src/assets/thumbnail/palmtunnel_600_600.jpg");
-    expect(existsSync("./src/assets/thumbnail/palmtunnel_600_600.jpg")).toBeTruthy();
+    expect(
+      existsSync("./src/assets/thumbnail/palmtunnel_600_600.jpg")
+    ).toBeTruthy();
   });
 });

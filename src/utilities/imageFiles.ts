@@ -27,9 +27,7 @@ export const resizeImage = async (
     const fullImage = await fs.readFile(`.${filePath}`);
     const thumbnailPath = `/src/assets/thumbnail/${fileName}_${width.toString()}_${height.toString()}.jpg`;
 
-    await sharp(fullImage)
-      .resize(width, height)
-      .toFile(`.${thumbnailPath}`);
+    await sharp(fullImage).resize(width, height).toFile(`.${thumbnailPath}`);
 
     return thumbnailPath;
   } catch (error: any) {
