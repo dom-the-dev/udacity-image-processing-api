@@ -51,3 +51,10 @@ Available filenames
 
 #### Run prettier
 `npm run prettier`
+
+## Resources useful links
+- [Node Docs](https://nodejs.org/api/fs.html)
+- [TypeScript Docs](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+- [Prettier Docs](https://prettier.io/)
+- [Sharp NPM](https://www.npmjs.com/package/sharp)
+- [Travery Media TypeScript Crash Course](https://www.youtube.com/watch?v=BCg4U1FzODs&t=1260s)
