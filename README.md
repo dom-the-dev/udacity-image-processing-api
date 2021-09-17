@@ -20,12 +20,12 @@ Available filenames
 
 ## Getting started
 
-- Clone this repository `git clone https://github.com/dom-the-dev/udacity-image-processing-api.git`
-- Cd into project directorry `cd  udacity-image-processing-api`
-- Install dependencies `npm install`
-- Build application `npm run build`
-- Start server `node build/app.js`
-- Visit `http://localhost:3000/`
+1. Clone this repository `git clone https://github.com/dom-the-dev/udacity-image-processing-api.git`
+2. Cd into project directorry `cd  udacity-image-processing-api`
+3. Install dependencies `npm install`
+4. Build application `npm run build`
+5. Start server `node build/app.js`
+6. Visit `http://localhost:3000/`
 
 ## Available Script:
 
