@@ -12,7 +12,7 @@ export const getThumbnailPath = async (
     if (existsSync(`.${filePath}`)) {
       return filePath;
     }
-  } catch (error: any) {
+  } catch (error) {
     console.log("Error getThumbnail(): ", error);
   }
 };
@@ -30,7 +30,7 @@ export const resizeImage = async (
     await sharp(fullImage).resize(width, height).toFile(`.${thumbnailPath}`);
 
     return thumbnailPath;
-  } catch (error: any) {
+  } catch (error) {
     console.log("Error resizeFullImage(): ", error);
   }
 };
@@ -41,14 +41,10 @@ export const getFullImagePath = async (
   try {
     const filePath = `/src/assets/full/${fileName}.jpg`;
 
-    try {
-      if (existsSync(`.${filePath}`)) {
-        return filePath;
-      }
-    } catch (error: any) {
-      console.log("Error getThumbnail(): ", error);
+    if (existsSync(`.${filePath}`)) {
+      return filePath;
     }
   } catch (error) {
-    console.log("Error getFullImage(): ", error);
+    console.log("Error getThumbnail(): ", error);
   }
 };
