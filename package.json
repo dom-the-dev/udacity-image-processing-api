@@ -4,8 +4,9 @@
   "description": "Image processing api",
   "main": "index.js",
   "scripts": {
+    "format": "npm run lint && npm run prettier",
     "lint": "npx eslint src/**/*.ts --fix",
-    "prettier": "prettier --config .prettierrc --write",
+    "prettier": "prettier --config .prettierrc src/**/*.ts --write",
     "jasmine": "jasmine",
     "test": "npm run build && npm run jasmine",
     "build": "npx tsc",
@@ -14,12 +15,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sharp": "^0.29.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/jasmine": "^3.9.1",
     "@types/nodemon": "^1.19.1",
+    "@types/sharp": "^0.29.2",
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",

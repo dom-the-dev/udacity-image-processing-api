@@ -35,17 +35,26 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var imageFiles_1 = __importDefault(require("../../utilities/imageFiles"));
-describe('Get thumbnails', function () {
-    it('should not find thumbnail for palmtunnel', function () { return __awaiter(void 0, void 0, void 0, function () {
+var imageFiles_1 = require("../../utilities/imageFiles");
+describe("Get thumbnails", function () {
+    it("should return filepath for palmtunnel thumbnail", function () { return __awaiter(void 0, void 0, void 0, function () {
         var thumbnail;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, (0, imageFiles_1.default)('palmtunnel')];
+                case 0: return [4 /*yield*/, (0, imageFiles_1.getThumbnail)("palmtunnel", "200", "300")];
+                case 1:
+                    thumbnail = _a.sent();
+                    expect(thumbnail).toBe("/src/assets/thumbnail/palmtunnel_200_300.jpg");
+                    return [2 /*return*/];
+            }
+        });
+    }); });
+    it("should return undefined for not available image", function () { return __awaiter(void 0, void 0, void 0, function () {
+        var thumbnail;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, (0, imageFiles_1.getThumbnail)("palmtunnel", "500", "500")];
                 case 1:
                     thumbnail = _a.sent();
                     expect(thumbnail).toBeFalsy();
@@ -53,14 +62,28 @@ describe('Get thumbnails', function () {
             }
         });
     }); });
-    it('should find thumbnail for fjord', function () { return __awaiter(void 0, void 0, void 0, function () {
-        var thumbnail;
+});
+describe("Get fullsize image", function () {
+    it("should return filepath for palmtunnel fullsize", function () { return __awaiter(void 0, void 0, void 0, function () {
+        var fullsize;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, (0, imageFiles_1.default)('fjord')];
+                case 0: return [4 /*yield*/, (0, imageFiles_1.getFullImage)("palmtunnel")];
                 case 1:
-                    thumbnail = _a.sent();
-                    expect(thumbnail).toBeTruthy();
+                    fullsize = _a.sent();
+                    expect(fullsize).toBe("/src/assets/full/palmtunnel.jpg");
+                    return [2 /*return*/];
+            }
+        });
+    }); });
+    it("should return undefined for not available image", function () { return __awaiter(void 0, void 0, void 0, function () {
+        var fullsize;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, (0, imageFiles_1.getFullImage)("notthere")];
+                case 1:
+                    fullsize = _a.sent();
+                    expect(fullsize).toBeFalsy();
                     return [2 /*return*/];
             }
         });

@@ -1,3 +1,4 @@
 node_modules
-
 .idea
+src/assets/thumbnail
+!src/assets/thumbnail/palmtunnel_200_300.jpg
