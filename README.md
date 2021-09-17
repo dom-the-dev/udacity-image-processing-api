@@ -5,7 +5,7 @@ Author: Dominik Amrugiewicz
 
 ### Available Script:
 
-#### Rùn jasmine tests
+#### Run jasmine tests
 `npm run jasmine`
 
 #### Run server
