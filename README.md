@@ -2,8 +2,16 @@
 ### Project #1 - Full Stack JavaScript Developer Nanodegree
 
 Image processing API, uses query parameters to serve resize images.
+In order to get an image you need to provide with and height via url query parameters. If one param is missing, the full-size version of this image will be served.
+In the frontend we placed a form available for better user experience.
 
-Example: `http://localhost:3000/api/image?filename=fjord&width=200&height=100`
+Example Url with parameters: 
+`http://localhost:3000/api/image?filename=fjord&width=200&height=100`
+
+### API Path
+`/api/image`
+
+### Available parameters
 
 | Parameters |  |  |
 | ------------------ | ------------------ |  ------------------ |
@@ -11,7 +19,7 @@ Example: `http://localhost:3000/api/image?filename=fjord&width=200&height=100`
 | width | set any image width | optional |
 | height | set any image height | optional |
 
-Available filenames
+### Available filenames
 - encenadaport
 - fjord
 - icelandwaterfall
