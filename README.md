@@ -2,7 +2,9 @@
 ### Project #1 - Full Stack JavaScript Developer Nanodegree
 
 Image processing API, uses query parameters to serve resize images.
-In order to get an image you need to provide with and height via url query parameters. If one param is missing, the full-size version of this image will be served.
+In order to get an image you need to provide the filename, and also the wanted width **and** height via url query parameters. 
+If one param is missing, you get an information about the missing parameter.
+If neither width nor height is specified the server will serve the original size image.
 In the frontend we placed a form available for better user experience.
 
 Example Url with parameters: 
