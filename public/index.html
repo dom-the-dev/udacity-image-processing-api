@@ -10,34 +10,45 @@
 </head>
 <body>
 
-<h1>Image Processing API</h1>
+<div class="wrapper">
 
-<p>Image processing API, uses query parameters to serve resize images.</p>
+    <h1>Image Processing API</h1>
 
-<p>Example: <a href="http://localhost:3000/api/image?filename=palmtunnel&width=400&height=250">http://localhost:3000/api/image?filename=palmtunnel&width=400&height=250</a></p>
+    <p>Image processing API, uses query parameters to serve resized images.</p>
 
-<table>
-    <tr>
-        <th>Parameter</th>
-        <th>Description</th>
-        <th>required</th>
-    </tr>
-    <tr>
-        <td>filename</td>
-        <td>Name of image</td>
-        <td>required</td>
-    </tr>
-    <tr>
-        <td>width</td>
-        <td>Chosen image width</td>
-        <td>optional</td>
-    </tr>
-    <tr>
-        <td>height</td>
-        <td>Chosen image height</td>
-        <td>optional</td>
-    </tr>
-</table>
+    <p>Example: <a href="http://localhost:3000/api/image?filename=palmtunnel&width=400&height=250">http://localhost:3000/api/image?filename=palmtunnel&width=400&height=250</a>
+    </p>
+
+    <form action="api/image" method="get" class="form">
+        <label class="label" for="filename">Image:</label>
+        <select class="select" name="filename" id="filename">
+            <option value="fjord">Fjord</option>
+            <option value="encenadaport">Encenadaport</option>
+            <option value="icelandwaterfall">Icelandwaterfall</option>
+            <option value="santamonica">Santamonica</option>
+        </select> <br>
+
+        <label class="label" for="width">Width:</label>
+        <input class="input" type="number" name="width" id="width"> <br>
+
+        <label class="label" for="height">Height:</label>
+        <input class="input" type="number" name="height" id="height">
+        <button>Get image</button>
+    </form>
+
+    <p>Say hi</p>
+    <ul>
+        <li>
+            <a href="https://github.com/dom-the-dev/" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+            <a href="https://domthedev.com/" target="_blank" rel="noopener">Dom the dev Portfolio</a>
+        </li>
+        <li>
+            <a href="https://twitter.com/Dom_TheDev" target="_blank" rel="noopener">Dom the dev</a>
+        </li>
+    </ul>
+</div>
 
 </body>
 </html>
