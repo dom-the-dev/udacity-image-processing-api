@@ -2,7 +2,7 @@ node_modules
 build
 .idea
 
-src/assets/thumbnail/
-!src/assets/thumbnail/palmrunnel_200_200.jpg
-!src/assets/thumbnail/palmrunnel_200_300.jpg
-!src/assets/thumbnail/palmrunnel_600_600.jpg
+public/assets/thumbnail
+!public/assets/thumbnail/palmrunnel_200_200.jpg
+!public/assets/thumbnail/palmrunnel_200_300.jpg
+!public/assets/thumbnail/palmrunnel_600_600.jpg
