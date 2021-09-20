@@ -7,11 +7,18 @@ If one param is missing, you get an information about the missing parameter.
 If neither width nor height is specified the server will serve the original size image.
 In the frontend we placed a form available for better user experience.
 
-Example Url with parameters: 
-`http://localhost:3000/api/image?filename=fjord&width=200&height=100`
+### Url 
+The URL is build by the API path and the query parameters.
 
-### API Path
+#### API path
 `/api/image`
+
+#### Parameters
+Parameters are added to the url. First parameter is added by question mark `?` followed by the name of the parameter followed by the equal sign `=` and the value.
+Any other parameter then is added by an ampersand `&`.
+
+Example Url with parameters:
+`http://localhost:3000/api/image?filename=fjord&width=200&height=100`
 
 ### Available parameters
 
