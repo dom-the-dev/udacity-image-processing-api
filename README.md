@@ -8,12 +8,12 @@ If neither width nor height is specified the server will serve the original size
 In the frontend we placed a form available for better user experience.
 
 ### Url 
-The URL is build by the API path and the query parameters.
+The URL is build by the **API path** and the **query parameters**.
 
 #### API path
 `/api/image`
 
-#### Parameters
+#### Query Parameters
 Parameters are added to the url. First parameter is added by question mark `?` followed by the name of the parameter followed by the equal sign `=` and the value.
 Any other parameter then is added by an ampersand `&`.
 
