@@ -58,6 +58,12 @@ Available filenames
 #### Run prettier
 `npm run prettier`
 
+## Dependencies
+- [NodeJS](https://nodejs.org/en/)
+- [ExpressJS](https://expressjs.com/)
+- [Sharp](https://www.npmjs.com/package/sharp)
+- [TypeScript](https://www.typescriptlang.org/)
+
 ## Resources useful links
 - [Node Docs](https://nodejs.org/api/fs.html)
 - [TypeScript Docs](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
