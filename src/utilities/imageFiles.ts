@@ -6,7 +6,7 @@ export const getThumbnailPath = async (
   width: string,
   height: string
 ): Promise<string | unknown> => {
-  const filePath = `/src/assets/thumbnail/${fileName}_${width}_${height}.jpg`;
+  const filePath = `/public/assets/thumbnail/${fileName}_${width}_${height}.jpg`;
 
   try {
     if (existsSync(`.${filePath}`)) {
@@ -23,9 +23,9 @@ export const resizeImage = async (
   height: number
 ): Promise<string | unknown> => {
   try {
-    const filePath = `/src/assets/full/${fileName}.jpg`;
+    const filePath = `/public/assets/full/${fileName}.jpg`;
     const fullImage = await fs.readFile(`.${filePath}`);
-    const thumbnailPath = `/src/assets/thumbnail/${fileName}_${width.toString()}_${height.toString()}.jpg`;
+    const thumbnailPath = `/public/assets/thumbnail/${fileName}_${width.toString()}_${height.toString()}.jpg`;
 
     await sharp(fullImage).resize(width, height).toFile(`.${thumbnailPath}`);
 
@@ -39,7 +39,7 @@ export const getFullImagePath = async (
   fileName: string
 ): Promise<string | unknown> => {
   try {
-    const filePath = `/src/assets/full/${fileName}.jpg`;
+    const filePath = `/public/assets/full/${fileName}.jpg`;
 
     if (existsSync(`.${filePath}`)) {
       return filePath;

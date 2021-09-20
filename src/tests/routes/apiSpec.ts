@@ -5,7 +5,7 @@ import path from "path";
 
 const request = supertest(app);
 
-const IMAGE_DIR = "src/assets/thumbnail";
+const IMAGE_DIR = "./public/assets/thumbnail";
 
 beforeAll(async () => {
   readdir(IMAGE_DIR, (err, files) => {
