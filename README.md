@@ -1,6 +1,6 @@
 # Image Processing API
 ### Project #1 - Full Stack JavaScript Developer Nanodegree
-
+___
 Image processing API, uses query parameters to serve resize images.
 In order to get an image you need to provide the filename, and also the wanted width **and** height via url query parameters. 
 If one param is missing, you get an information about the missing parameter.
@@ -29,7 +29,7 @@ Example Url with parameters:
 - santamonica
 
 ## Getting started
-
+___
 1. Clone this repository `git clone https://github.com/dom-the-dev/udacity-image-processing-api.git`
 2. Cd into project directorry `cd  udacity-image-processing-api`
 3. Install dependencies `npm install`
@@ -38,13 +38,13 @@ Example Url with parameters:
 6. Visit `http://localhost:3000/`
 
 ## Development
-
+___
 - rum `npm run start` to start development server
 - all files are places in `src` 
 - public files are places in `public`
 
 ## Available Script:
-
+___
 #### Run server
 `npm run start`
 
@@ -67,13 +67,13 @@ Example Url with parameters:
 
 #### Run prettier
 `npm run prettier`
-
+___
 ## Dependencies
 - [NodeJS](https://nodejs.org/en/)
 - [ExpressJS](https://expressjs.com/)
 - [Sharp](https://www.npmjs.com/package/sharp)
 - [TypeScript](https://www.typescriptlang.org/)
-
+___
 ## Resources useful links
 - [Node Docs](https://nodejs.org/api/fs.html)
 - [TypeScript Docs](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
