@@ -27,6 +27,12 @@ Available filenames
 5. Start server `node build/app.js`
 6. Visit `http://localhost:3000/`
 
+## Development
+
+- rum `npm run start` to start development server
+- all files are places in `src` 
+- public files are places in `public`
+
 ## Available Script:
 
 #### Run server

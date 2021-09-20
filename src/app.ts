@@ -1,6 +1,5 @@
 import express from "express";
 import routes from "./routes/index";
-import path from "path";
 const app = express();
 const port = 3000;
 
@@ -10,6 +9,7 @@ app.use(express.static("public"));
 // Api routes
 app.use("/api", routes);
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+// Run server on port 3000
+app.listen(port, () => console.log(`Listening on port ${port}\nVisit: http://localhost:3000`));
 
 export default app;

@@ -5,10 +5,11 @@ import {
   resizeImage,
 } from "../utilities/imageFiles";
 import path from "path";
+import express from "express";
 
 const __dirname = path.resolve();
 
-export const getImage = asyncHandler(async (req, res) => {
+export const getImage = asyncHandler(async (req: express.Request, res: express.Response) => {
   const filename = req.query.filename as string;
   let filePath = "";
 
